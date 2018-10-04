@@ -1,0 +1,75 @@
+.tab-content{
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+}
+
+#square{
+    background-color: lightgray;
+    width: 8%;
+    height: 90px;
+}
+#intro{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 0px;
+    height: 60px;
+    
+}
+
+.field-wrap {
+    margin:2px auto;
+    padding: 2px;
+
+}
+.field-wrap input{
+    height: 25px;
+    width: 100%;
+    background-color: lightgrey;
+}
+.signsub{
+  text-align: center;
+}
+
+.field-wrap button{
+    height: 30px;
+    width: 100%;
+    background-color: gray;
+    color: lightgrey;
+    margin-left: 2px;
+}
+#condi a{
+    color: gray;
+    margin-left:100px; 
+} 
+
+.container{
+    width:100%;
+    }
+    .content{
+    float:left;
+    height:30px;
+    }
+    .content1{
+        display: inline-block;
+    background-color:lightgrey;
+    width:300px;
+    height: 300px;
+    margin:30px;
+    padding: 10%;
+    }
+    .content2{
+    width:300px;
+    height: 300px;
+    padding: 10%;
+    }
+    @media screen and (width: 600px){
+    
+        .content1, .content2{  
+            max-width: 100%;
+        }
+    }
