@@ -5,8 +5,6 @@ $_SESSION['email'] = $_POST['email'];
 $_SESSION['firstname'] = $_POST['firstname'];
 $_SESSION['lastname'] = $_POST['lastname'];
  
-
-
 $email=$_POST['email'];
 
 $sql= "SELECT * FROM users WHERE email='$email'" ;
@@ -34,11 +32,12 @@ else {
        if($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
              $id = $row['id'];
-             echo $row['id'];  
+
+
+
+              ?><p id="id"> <? echo $row['id']   ?></p> <?;  
           }
         }
- 
-        // header("Location: home.php");
 
     }
     else {
@@ -50,3 +49,4 @@ else {
     }
 }
 ?>
+<link rel="stylesheet" href="css/styles.css">
