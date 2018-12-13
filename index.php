@@ -11,17 +11,7 @@ session_start();
         <title>LEARNING COURSE</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <?php
 
-    if($_SERVER['REQUEST_METHOD']=='POST'){
-       
-        if(isset($_POST['register'])){
-            require 'sign.php';
-        }
-     
-    }
-      
-    ?>
     <body>
          <div class="form">
                 <div id="square">    
@@ -31,17 +21,33 @@ session_start();
                     <div class="content1 content">
                     </div>
                     <div class="content2 content">
+                        
+                         
+
                         <h2 class="signsub">CREATE A NEW ACCOUNT </h2>
                         <form action="index.php" method="POST">
                                 <p id="intro">Free joining  on our website and get 50% discount after registered.</p>
+                                    <div class="number">
+                                    <?php
+
+                                        if($_SERVER['REQUEST_METHOD']=='POST'){
+   
+                                        if(isset($_POST['register'])){
+                                               require 'sign.php';
+                                          }
+ 
+                                       }
+  
+                                    ?>
+                                    </div>
                         <div class="field-wrap">
-                                <input type="text" name="firstname" placeholder="First name">
+                                <input type="text"  required name="firstname" placeholder="First name">
                             </div>
                         <div class="field-wrap">
-                                <input type="text" name="lastname" placeholder="Last name">
+                                <input type="text" required name="lastname" placeholder="Last name">
                             </div>
                         <div class="field-wrap">
-                                <input type="email" name="email" placeholder="Email address">
+                                <input type="email" required name="email" placeholder="Email address" required>
                             </div>
                             <div class="field-wrap">
                             <button type="submit" class="button-button-block" name="register">Sign up</button>

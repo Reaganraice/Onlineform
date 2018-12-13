@@ -32,9 +32,6 @@ else {
        if($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
              $id = $row['id'];
-
-
-
               ?><p id="id"> <? echo $row['id']   ?></p> <?;  
           }
         }
